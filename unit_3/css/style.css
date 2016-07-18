@@ -1,0 +1,30 @@
+body {
+	color: #08258D;
+	font-family: "Avenir Next";
+}
+
+h1 {
+	color: #072575;
+}
+
+p {
+	text-align: center;
+	font-size: 12px;
+}
+
+ul {
+	text-align: left;
+}
+
+li {
+	text-align: left;
+}
+
+img {
+	margin: auto;
+}
+
+#slogan {
+	font-style: italic;
+	font-size: 20px;
+}

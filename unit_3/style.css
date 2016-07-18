@@ -1,6 +1,9 @@
 body {
+	text-align: center;
 	color: #08258D;
 	font-family: "Avenir Next";
+	background: url(images/DSC01005.JPG);
+	background-size: cover;
 }
 
 h1 {

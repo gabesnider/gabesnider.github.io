@@ -9,11 +9,15 @@ h1 {
 }
 
 p {
-	text-align: left;
+	text-align: center;
 	font-size: 18px;
 }
 
 ul {
+	text-align: left;
+}
+
+#experience {
 	text-align: left;
 }
 

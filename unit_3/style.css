@@ -9,12 +9,12 @@ h1 {
 }
 
 p {
-	text-align: center;
+	text-align: inherit;
 	font-size: 18px;
 }
 
 ul {
-	text-align: left;
+	text-align: center;
 }
 
 #experience {

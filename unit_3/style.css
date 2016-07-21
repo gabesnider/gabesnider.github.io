@@ -1,35 +1,51 @@
 body {
 	text-align: center;
-	color: #08258D;
+	font-style: bold;
+	color: white;
 	font-family: "Avenir Next";
+	background-image: url('images/DSC00252.JPG');
+	background-size: cover;
+	background-position: relative;
+	background-repeat: no-repeat;
 }
 
 h1 {
-	color: #072575;
+	color: white;
 }
 
 p {
-	text-align: inherit;
-	font-size: 18px;
+	
 }
 
 ul {
-	text-align: left;
+	color: white;
+	text-align: center;
+	list-style-type: none;
 }
 
-#experience {
-	text-align: left;
+#nav li {
+	font-size: 20px;
+	font-style: bold;
+	color: white;
+	display: inline;
+	padding: 100px;
 }
 
-li {
-	text-align: left;
+#nav a {
+	text-decoration: none;
+}
+
+#nav a:visited {
+	color: white;
 }
 
 img {
-	margin: auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 #slogan {
-	font-style: italic;
+	font-style: bold;
 	font-size: 35px;
 }

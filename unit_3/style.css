@@ -1,29 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
 body {
-	text-align: center;
-	font-style: bold;
 	color: white;
-	font-family: "Avenir Next";
-	background-image: url('images/DSC00252.JPG');
+	text-align: center;
+	background-image: url('images/kingscanyon.JPG');
 	background-size: cover;
 	background-position: relative;
 	background-repeat: no-repeat;
 }
 
-h1 {
-	color: white;
-}
-
 p {
-	
+	font-family: "Avenir Next";
+	color: white;
+	padding-bottom: 20px;
 }
 
 ul {
-	color: white;
+	font-family: "Avenir Next";
 	text-align: center;
 	list-style-type: none;
 }
 
 #nav li {
+	text-align: center;
 	font-size: 20px;
 	font-style: bold;
 	color: white;
@@ -46,6 +45,7 @@ img {
 }
 
 #slogan {
-	font-style: bold;
-	font-size: 35px;
+	font-family: "Lobster";
+	color: white;
+	font-size: 50px;
 }

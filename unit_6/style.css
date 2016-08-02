@@ -1,15 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Slabo+13px);
-
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
 	color: white;
 	text-align: center;
-	
+	line-height:1.5;
 }
 
 #sectionone {
 	background-image: url('images/gabeincanyon.JPG');
 	background-size: cover;
+	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -18,9 +19,13 @@ body {
 	background-size: cover;
 	background-position: absolute;
 	background-repeat: no-repeat;
-	height: 100vh;
 	font-family: "Avenir Next";
 	float: left;
+	text-align:left;
+}
+#about div {
+	background: rgba(7, 35, 1, 0.5);
+	height: 100vh;
 }
 
 #slogan {
@@ -29,16 +34,10 @@ body {
 	font-size: 50px;
 	vertical-align: center;
 }
-
-#aboutsection {
-	text-align: left;
-	line-height: 1.5em;
-}
-
 p {
 	font-size: 20px;
 	text-align: center;
-	background: rgba(0,0,0,0.4);
+	/* background: rgba(0,0,0,0.4); */
 	font-family: "Avenir Next";
 	color: white;
 	padding: 20px;
@@ -51,14 +50,14 @@ nav {
 	padding-top: 40px;
 }
 
-li {
+nav a {
 	text-align: center;
 	font-size: 20px;
 	color: white;
-	display: inline;
+	display: inline-block;
 	border: 3px solid white;
 	padding: 10px 24px;
-	margin: 150px;
+	margin: 1em 10%;
 }
 
 a {

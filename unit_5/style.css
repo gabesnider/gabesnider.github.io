@@ -32,8 +32,6 @@ nav {
 	font-family: "Avenir Next";
 	text-align: center;
 	list-style-type: none;
-	padding: 20px;
-	background-color: #E8C66A;
 }
 
 li {
@@ -62,15 +60,4 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-}
-
-header {
-	border: 1px black solid;
-	background-color: #FFED74;
-}
-
-#about {
-	border: 1px black solid;
-	background-color: #E89C6C;
-	padding: 20px;
 }

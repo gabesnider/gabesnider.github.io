@@ -16,15 +16,12 @@ body {
 	height: 100vh;
 }
 
-#twocolumn {
-	
-}
 #slogan {
 	padding-top: 20px;
 	padding-left: 20px;
 	font-family: "Avenir Next";
 	color: white;
-	font-size: 150px;
+	font-size: 140px;
 	vertical-align: center;
 	float: left;
 	width: 60%;
@@ -41,7 +38,7 @@ body {
 }
 
 #about {
-	background-image: url('images/Ben_3825.JPG');
+	background-image: url('images/BEN_3825.JPG');
 	background-size: cover;
 	font-family: "Avenir Next";
 	height: 100vh;
@@ -58,7 +55,7 @@ body {
 }
 
 p {
-	font-size: 20px 180px;;
+	font-size: 20px;
 	text-align: center;
 	font-family: "Avenir Next";
 	color: white;
@@ -66,8 +63,10 @@ p {
 }
 
 nav {
+	clear: both;
 	font-family: "Avenir Next";
-	text-align: center;
+	text-align: left;
+	padding-left: 140px;
 	list-style-type: none;
 	padding-top: 40px;
 }
@@ -79,14 +78,14 @@ nav a {
 	display: inline-block;
 	border: 3px solid white;
 	padding: 10px 24px;
-	margin: 1em 10%;
+	margin: 1em;
 	border-radius: 1000px;
 	text-decoration: none;
+	transition: all .2s ease-in;
 }
 
 nav a:hover {
 	background: rgba(0,0,0,0.5);
-	transition: all .2s ease-in;
 	transform: scale(1.1, 1.1);
 	color: white;
 	text-decoration: none;

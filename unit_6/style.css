@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Slabo+13px);
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0; padding:0; box-sizing:border-box; transition: all .2s ease-in;}
 
 body {
 	color: white;
@@ -38,33 +38,59 @@ body {
 }
 
 #aboutme {
-	float: right;
-	width: 40%;
-	background: black;
+	width: 100%;
+	background: white;
 	overflow: hidden;
+}
+
+#aboutme p {
+	color: black;
+}
+
+#contentabout {
+	background-image: url('images/queenstown.jpg');
+	float: right;
+	width: 50%;
+	height: 100%;
 }
 
 #aboutpicture {
-	float: left
-	width: 60%%;
+	color: black;
+	float: left;
+	width: 50%;
+}
+
+#aboutpicture img {
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+
+#me {
+	width: 100%;
+	background: white;
 	overflow: hidden;
 }
 
-#about {
-	background-image: url('images/BEN_3825.JPG');
-	background-size: cover;
-	font-family: "Avenir Next";
-	height: 100vh;
+#me p {
+	color: black;
 }
 
-#aboutps1 {
-	display: block;
-	opacity: 0.9;
-	background-color: rgba(0,0,0,0.4);
-}
-
-#about div {
+#contentme {
 	float: left;
+	width: 40%;
+}
+
+#mepicture {
+	float: right;
+	width: 60%;
+}
+
+#mepicture img {
+	width: 100%;
+}
+
+.clearfix {
+
 }
 
 p {

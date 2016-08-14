@@ -12,6 +12,7 @@ body {
 #sectionone {
 	background-image: url('images/gabeoncar.JPG');
 	background-size: cover;
+	width: 100%;
 	background-attachment: fixed;
 	height: 100vh;
 }
@@ -47,46 +48,49 @@ body {
 	color: black;
 }
 
-#contentabout {
-	background-image: url('images/queenstown.jpg');
-	float: right;
-	width: 50%;
+#firstcontent {
+	color: black;
+	float: left;
 	height: 100%;
+	width: 50%;
 }
 
-#aboutpicture {
-	color: black;
+#firstpicture {
 	float: left;
 	width: 50%;
 }
 
-#aboutpicture img {
+#firstpicture img {
 	width: 100%;
 	-webkit-filter: grayscale(100%);
 }
 
-#me {
+#meagain {
 	width: 100%;
 	background: white;
 	overflow: hidden;
+	margin-top: -7px;
+	margin-bottom: -7px;
 }
 
-#me p {
+#meagain p {
 	color: black;
 }
 
 #contentme {
 	float: left;
-	width: 40%;
+	width: 50%;
 }
 
 #mepicture {
 	float: right;
-	width: 60%;
+	width: 50%;
+	color: black;
 }
 
 #mepicture img {
 	width: 100%;
+	-webkit-filter: grayscale(100%);
 }
 
 .clearfix {
@@ -128,8 +132,4 @@ nav a:hover {
 	transform: scale(1.1, 1.1);
 	color: white;
 	text-decoration: none;
-}
-
-nav a:visited {
-	color: white;
 }

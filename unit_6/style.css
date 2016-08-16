@@ -18,8 +18,8 @@ body {
 }
 
 #slogan {
-	padding-top: 20px;
-	padding-left: 20px;
+	padding-top: 1%;
+	padding-left: 1%;
 	font-family: "Avenir Next";
 	color: white;
 	font-size: 140px;
@@ -30,12 +30,18 @@ body {
 
 #brandstatement {
 	line-height: 2em;
-	padding-top: 45px;
-	padding-left: 40px;
+	padding-top: 2%;
+	padding-left: 3%;
 	float: right;
 	width: 40%;
-	font-size: 20px;
 	text-align: left;
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 1438px) {
+	#brandstatement {
+		font-size: 20px;
+	}
 }
 
 #aboutme {
@@ -70,8 +76,8 @@ body {
 	width: 100%;
 	background: white;
 	overflow: hidden;
-	margin-top: -7px;
-	margin-bottom: -7px;
+	margin-top: -.5%;
+	margin-bottom: -.5%;
 }
 
 #meagain p {
@@ -103,16 +109,15 @@ p {
 	text-align: center;
 	font-family: "Avenir Next";
 	color: white;
-	padding: 20px;
+	padding: 3%;
 }
 
 nav {
-	clear: both;
 	font-family: "Avenir Next";
+	padding-top: 10%;
 	text-align: left;
-	padding-left: 160px;
+	padding-left: 10%;
 	list-style-type: none;
-	padding-top: 40px;
 }
 
 nav a {
@@ -121,9 +126,9 @@ nav a {
 	color: white;
 	display: inline-block;
 	border: 3px solid white;
-	padding: 10px 24px;
+	padding: 1% 2.3%;
 	margin: 1em;
-	border-radius: 1000px;
+	border-radius: 100px;
 	text-decoration: none;
 	transition: all .2s ease-in;
 }

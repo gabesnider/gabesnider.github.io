@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Slabo+13px);
-* { margin:0; padding:0; box-sizing:border-box; transition: all .2s ease-in;}
+* { font-family: "Avenir Next"; margin:0; padding:0; box-sizing:border-box; transition: all .2s ease-in;}
 
 body {
-	color: white;
 	text-align: center;
 	line-height:1.5;
 	text-rendering: optimizeLegibility;
@@ -12,6 +11,7 @@ body {
 #sectionone {
 	background-image: url('images/gabeoncar.JPG');
 	background-size: cover;
+	background-position: center;
 	width: 100%;
 	background-attachment: fixed;
 	height: 100vh;
@@ -20,7 +20,6 @@ body {
 #slogan {
 	padding-top: 1%;
 	padding-left: 1%;
-	font-family: "Avenir Next";
 	color: white;
 	font-size: 140px;
 	vertical-align: center;
@@ -35,13 +34,24 @@ body {
 	float: right;
 	width: 40%;
 	text-align: left;
-	font-size: 18px;
+	font-size: 20px;
 }
 
-@media only screen and (max-width: 1438px) {
-	#brandstatement {
-		font-size: 20px;
+@media only screen and (max-width: 1421px) {
+	#slogan {
+		font-size: 135px;
 	}
+
+	#brandstatement {
+		font-size: 19px;
+	}
+}
+
+#headaboutme {
+	padding-top: 125px;
+	padding-bottom: 125px;
+	background-image: url("images/buildings.jpg");
+	background-size: cover;
 }
 
 #aboutme {
@@ -55,11 +65,17 @@ body {
 }
 
 #firstcontent {
-	background-image: url("images/melb1.jpg");
+	height: 400px;
+	opacity: 0.6;
 	background-size: cover;
+	padding-bottom: 133px;
 	color: black;
 	float: left;
 	width: 50%;
+}
+
+#firstcontent p {
+	color: black;
 }
 
 #firstpicture {
@@ -85,8 +101,16 @@ body {
 }
 
 #contentme {
+	height: 400px;
+	opacity: 0.6;
+	background-size: cover;
+	padding-bottom: 400px;
 	float: left;
 	width: 50%;
+}
+
+#contentme p {
+	color: black;
 }
 
 #mepicture {
@@ -107,13 +131,11 @@ body {
 p {
 	font-size: 20px;
 	text-align: center;
-	font-family: "Avenir Next";
 	color: white;
 	padding: 3%;
 }
 
 nav {
-	font-family: "Avenir Next";
 	padding-top: 10%;
 	text-align: left;
 	padding-left: 10%;

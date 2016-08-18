@@ -10,6 +10,7 @@ body {
 
 #sectionone {
 	background-image: url('images/gabeoncar.JPG');
+	position: center;
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -47,17 +48,33 @@ body {
 	}
 }
 
+@media only screen and (max-width: 1370px) {
+	#slogan {
+		font-size: 130px;
+	}
+
+	#brandstatement {
+
+	}
+}
+
 #headaboutme {
 	padding-top: 125px;
 	padding-bottom: 125px;
 	background-image: url("images/buildings.jpg");
 	background-size: cover;
+	height: 200px;
+}
+
+#headaboutme img {
+	position: absolute;
 }
 
 #aboutme {
 	width: 100%;
 	background: white;
 	overflow: hidden;
+	height: 400px;
 }
 
 #aboutme p {
@@ -65,7 +82,6 @@ body {
 }
 
 #firstcontent {
-	height: 400px;
 	opacity: 0.6;
 	background-size: cover;
 	padding-bottom: 133px;
@@ -81,6 +97,8 @@ body {
 #firstpicture {
 	float: left;
 	width: 50%;
+	min-width: 600px;
+	overflow: hidden;
 }
 
 #firstpicture img {
@@ -90,10 +108,9 @@ body {
 
 #meagain {
 	width: 100%;
+	height: 400px;
 	background: white;
 	overflow: hidden;
-	margin-top: -.5%;
-	margin-bottom: -.5%;
 }
 
 #meagain p {
@@ -101,7 +118,6 @@ body {
 }
 
 #contentme {
-	height: 400px;
 	opacity: 0.6;
 	background-size: cover;
 	padding-bottom: 400px;
@@ -114,9 +130,11 @@ body {
 }
 
 #mepicture {
+	min-width: 600px;
 	float: right;
 	width: 50%;
 	color: black;
+	overflow: hidden;
 }
 
 #mepicture img {

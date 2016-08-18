@@ -97,11 +97,11 @@ body {
 #firstpicture {
 	float: left;
 	width: 50%;
-	min-width: 600px;
 	overflow: hidden;
 }
 
 #firstpicture img {
+	min-width: 600px;
 	width: 100%;
 	-webkit-filter: grayscale(100%);
 }
@@ -119,7 +119,6 @@ body {
 
 #contentme {
 	opacity: 0.6;
-	background-size: cover;
 	padding-bottom: 400px;
 	float: left;
 	width: 50%;
@@ -130,16 +129,46 @@ body {
 }
 
 #mepicture {
-	min-width: 600px;
 	float: right;
 	width: 50%;
 	color: black;
 	overflow: hidden;
+	background-size: cover;
 }
 
 #mepicture img {
+	min-width: 600px;
 	width: 100%;
 	-webkit-filter: grayscale(100%);
+}
+
+#skills {
+	width: 100%;
+	height: 400px;
+	background: white;
+	overflow: hidden;
+}
+
+#skillspicture {
+	float: left;
+	width: 50%;
+	overflow: hidden;
+}
+
+#skillspicture img {
+	min-width: 600px;
+	width: 100%;
+}
+
+#myskills {
+	min-width: 600px;
+	overflow: hidden;
+	float: right;
+	width: 50%;
+}
+
+#myskills p {
+	color: black;
 }
 
 .clearfix {

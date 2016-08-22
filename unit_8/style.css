@@ -80,7 +80,7 @@ nav a:hover {
 	background-size: cover;
 	padding-bottom: 133px;
 	color: black;
-	float: left;
+	float: right;
 	width: 50%;
 }
 
@@ -93,13 +93,12 @@ nav a:hover {
 	transform: translate(-50%, -50%);
 }
 
-#firstpicture {
+#firstimage {
 	float: left;
 	width: 50%;
 	overflow: hidden;
 	background-size: cover;
 	height: 100%;
-	-webkit-filter: grayscale(100%);
 }
 
 #meagain {

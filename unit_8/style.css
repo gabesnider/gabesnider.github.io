@@ -68,7 +68,6 @@ nav a:hover {
 
 #aboutme {
 	width: 100%;
-	background: white;
 	overflow: hidden;
 }
 
@@ -78,13 +77,11 @@ nav a:hover {
 
 #firstcontent {
 	position: relative;
-	opacity: 0.6;
 	background-size: cover;
 	padding-bottom: 133px;
 	color: black;
 	float: left;
 	width: 50%;
-	height: 100%;
 }
 
 #firstcontent p {
@@ -92,6 +89,7 @@ nav a:hover {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	height: 100%;
 	transform: translate(-50%, -50%);
 }
 
@@ -118,7 +116,6 @@ nav a:hover {
     position: relative;
     float: left;
     width: 50%;
-    height: 100%;
 }
 
 #contentme p {
@@ -126,6 +123,7 @@ nav a:hover {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	height: 100%
 	transform: translate(-50%, -50%);
 }
 

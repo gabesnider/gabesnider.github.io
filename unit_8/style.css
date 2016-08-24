@@ -10,12 +10,13 @@ body {
 
 #sectionone {
 	background-image: url('images/gabeoncar.JPG');
-	position: center;
+	-webkit-filter: grayscale(100%);
 	background-size: cover;
 	background-position: center;
 	width: 100%;
 	background-attachment: fixed;
 	height: 100vh;
+	position: relative;
 }
 
 #slogan {
@@ -43,6 +44,14 @@ body {
 	clear:both;
 }
 
+nav {
+	clear: both;
+	position: absolute;
+	top: 30%;
+	left: -25%;
+	width: 100%;
+}
+
 nav a {
 	text-align: center;
 	font-size: 20px;
@@ -62,8 +71,8 @@ nav a:hover {
 }
 
 #headaboutme {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 4%;
+	padding-bottom: 4%;
 }
 
 #aboutme {
@@ -122,8 +131,8 @@ nav a:hover {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	height: 100%
-	transform: translate(-50%, -50%);
+	height: 100%;
+	transform: translate(-50%);
 }
 
 #mepicture {
@@ -132,12 +141,11 @@ nav a:hover {
 	overflow: hidden;
 	background-size: cover;
 	height: 100%;
-	-webkit-filter: grayscale(100%);
 }
 
 #headskills {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 4%;
+	padding-bottom: 4%;
 }
 
 #skills {
@@ -166,7 +174,6 @@ nav a:hover {
 
 #moreskills { 
 	width: 100%;
-	height: 400px;
 	overflow: hidden;
 }
 
@@ -179,22 +186,48 @@ nav a:hover {
 
 #evenmore p {
 	color: black;
+	height: 100%;
 }
 
 #moreskillspicture {
 	float: right;
 	width: 50%;
 	overflow: hidden;
-}
-
-#moreskillspicture img {
+	height: 100%;
 	min-width: 600px;
-	width: 100%;
 }
 
-.clearfix {
+#headcontact {
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+#contact {
 
 }
+
+#contactpicture {
+	float: left;
+	width: 50%;
+	overflow: hidden;
+	height: 100%;
+}
+
+#contactcontent {
+	position: relative;
+	float: right;
+	width: 50%;
+	overflow: hidden;
+	height: 100%;
+}
+
+#contactcontent p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+} 
 
 p {
 	font-size: 20px;
@@ -203,12 +236,67 @@ p {
 	padding: 3%;
 }
 
-@media only screen and (max-width: 1398ox) {
+@media only screen and (max-width: 1398px) {
+	#sectionone {
+		position: relative;
+	}
+
+	#slogan, #brandstatement {
+		float: none;
+	}
+
 	#slogan {
-		
+		width: 60%;
+		position: absolute;
 	}
 
 	#brandstatement {
+		position: absolute;
+		top: 25%;
+	}
+
+	nav {
+		position: absolute;
+		top: 80%;
+		left: -25%
+		width: 100%;
 		float: none;
+		clear: none;
+		display: block;
 	}
 }
+
+@media only screen and (max-width: 1139px) {
+	#slogan {
+		font-size: 100px;
+	}
+
+	#firstcontent, #firstimage {
+		float: none;
+		width: 100%;
+	}
+
+	#contentme, #mepicture {
+		float: none;
+		width: 100%;
+	}
+
+	#skillspicture, #myskills {
+		float: none;
+		width: 100%;
+	}
+
+	#evenmore, #moreskillspicture {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1036px) {
+	#slogan {
+		font-size: 80px;
+	}
+}
+
+
+

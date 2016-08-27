@@ -34,7 +34,11 @@ body {
 	transform: translate(0, 0);
 }
 #slogan {
+<<<<<<< HEAD
 	font-size: 5em;
+=======
+	font-size: 6vw;
+>>>>>>> origin/master
 	float: left;
 	/* padding: 2rem 0; */
 	width: 50%;
@@ -48,6 +52,10 @@ body {
 	float: left;
 	width: 50%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 .clearfix:after,section:after {
 	height: 0;
 	visibility: hidden;
@@ -81,6 +89,10 @@ nav a:hover {
 	transform: scale(1.1, 1.1);
 	text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 h1 {
 	padding-top: 4%;
 	padding-bottom: 4%;
@@ -103,6 +115,7 @@ section p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+<<<<<<< HEAD
 }
 section div:nth-of-type(even) div {
     float: right;
@@ -131,6 +144,36 @@ section div:nth-of-type(even) div {
 	background-repeat:no-repeat;
 	background-position:center;
 }
+=======
+}
+section div:nth-of-type(even) div {
+    float: right;
+}
+.about-pic {
+	background: url(images/rice.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.meagain-pic {
+	background:url(images/gabewithcomputer.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.skills-pic {
+	background:url(images/streetart.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.moreskills-pic {
+	background:url(images/watching.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+>>>>>>> origin/master
 .contact-pic {
 	background:url(images/face.jpg);
 	background-size:cover;
@@ -140,7 +183,12 @@ section div:nth-of-type(even) div {
 p {
 	text-align: center;
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 1200px) {
+=======
+/*
+@media only screen and (max-width: 1398px) {
+>>>>>>> origin/master
 	#sectionone {
 		position: relative;
 	}
@@ -201,4 +249,25 @@ p {
 	}
 }
 
+<<<<<<< HEAD
 
+=======
+@media only screen and (max-width: 1036px) {
+	#slogan {
+		font-size: 80px;
+	}
+}
+
+*/
+/*@media only screen and (max-width:1000px) {
+	section>div {
+		overflow: auto;
+		height: auto;
+	}
+	section div div {
+		width: 100%;
+		height:30em;
+	}
+}
+*/
+>>>>>>> origin/master

@@ -4,8 +4,11 @@
 	<title>Gabe Snider</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/Weather-Sun-icon.png" />
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="js/leaflet.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/leaflet.js"></script>
 
 </head>
 
@@ -68,24 +71,23 @@
 			</div>
 		</div>
 	</section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-$(document).ready(function() {
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function() {
-        window.location.hash = hash;
-      });
-    }
-  });
-});
+	$(document).ready(function() {
+	  $("a").on('click', function(event) {
+	
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	
+	      var hash = this.hash;
+	
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function() {
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
 </script>
 
 </body>

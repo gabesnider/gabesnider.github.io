@@ -55,6 +55,16 @@ body {
 	clear:both;
 	content: "";
 }
+#headskills a, #headcontact a {
+	text-decoration: none;
+}
+#headskills a:hover, #headcontact a:hover {
+	border-bottom: 1px solid black;
+}
+#headskills a:visited, #headcontact a:visited {
+	background: blue;
+	color: black;
+}
 nav {
 	clear: both;
 	float: left;

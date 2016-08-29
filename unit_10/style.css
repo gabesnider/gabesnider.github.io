@@ -55,6 +55,16 @@ body {
 	clear:both;
 	content: "";
 }
+#headskills a, #headcontact a {
+	text-decoration: none;
+}
+#headskills a:hover, #headcontact a:hover {
+	border-bottom: 1px solid black;
+}
+#headskills a:visited, #headcontact a:visited {
+	background: blue;
+	color: black;
+}
 nav {
 	clear: both;
 	float: left;
@@ -210,5 +220,16 @@ p {
 	}
 	nav a + a {
 		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 376px) {
+	#slogan {
+		font-size: 8vw;
+	}
+	#brandstatement {
+		font-size: 5vw;
+	}
+	nav a {
+		font-size: 5vw;
 	}
 }

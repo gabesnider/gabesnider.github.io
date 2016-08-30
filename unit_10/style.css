@@ -5,7 +5,7 @@
 
 body {
 	text-align: center;
-	font-family: "Avenir Next";
+	font-family: "Avenir", sans-serif;
 	text-rendering: optimizeLegibility;
 	font-size: 20px;
 	color: #222;

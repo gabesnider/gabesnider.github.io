@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Slabo+13px);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 * { margin:0; padding:0; box-sizing:border-box; transition: all .2s ease-in;}
 
 body {
@@ -57,6 +58,8 @@ body {
 }
 #headskills a, #headcontact a {
 	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
 }
 #headskills a:hover, #headcontact a:hover {
 	border-bottom: 1px solid black;
@@ -126,7 +129,7 @@ section div:nth-of-type(even) div {
 	background:url(images/gabewithcomputer.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-position:center;
+	background-position:right;
 }
 .skills-pic {
 	background:url(images/streetart.jpg);
@@ -152,12 +155,13 @@ p {
 @media only screen and (max-width: 1200px) {
 	#sectionone {
 		position: relative;
+		height: 100%;
 	}
 	#slogan, #brandstatement {
 		float: none;
 	}
 	#slogan {
-		font-size: 5em;
+		font-size: 4em;
 		width: 60%;
 		position: absolute;
 		padding-left: .5vw;
@@ -171,17 +175,11 @@ p {
 		position: relative;
 	}
 	#twocolumn {
-		padding-top: 2em;
+		padding: 2em 1em 10em;
 	}
 	nav {
 		padding-left: .5vw;
-		position: absolute;
-		top: 85%;
-		left: -25%
-		width: 100%;
-		float: none;
-		clear: none;
-		display: block;
+		float: left;c
 	}
 }
 @media only screen and (max-width: 933px) {
@@ -197,27 +195,42 @@ p {
 		font-size: 7vw;
 	}
 }
+@media only screen and (max-width: 670px) {
+	nav {
+		width: 90%;
+	}
+	nav a {
+		display: block;
+    	margin-top: .5em;
+	}
+	nav a + a {
+		margin-left: 0;
+	}
+}
 @media only screen and (max-width: 631px) {
 	#slogan {
+		width: 100%;
 		font-size: 2em;
 		left: 1em;
-	}
-	#twocolumn {
-		padding-top: .5em;
 	}
 	#brandstatement {
 		left: 1em;
 		width: 90%;
 	}
 	nav {
-		top: 45%;
 		width: 100%;
-		display: block;
 	}
 	nav a {
-		width:65%;
+		display: block;
+    	margin-top: .5em;
 	}
 	nav a + a {
 		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 400px) {
+	nav a {
+		background: rgba(0,0,0,0.6);
+		font-color: black;
 	}
 }

@@ -99,11 +99,20 @@ nav a + a {
 /* nav a:first-of-type {
 	margin-left:0;
 } */
-
+nav a:link {
+	border: 2px solid;
+	padding: 1em 2em;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+}
 nav a:hover {
 	background: rgba(0,0,0,0.5);
 	transform: scale(1.1, 1.1);
 	text-decoration: none;
+}
+nav a:active {
+	
 }
 h1 {
 	padding-top: 4%;
@@ -191,6 +200,11 @@ p {
 		float: left;c
 	}
 }
+@media only screen and (max-width: 1160px) {
+	#brandstatement {
+		width: 53%;
+	}
+}
 @media only screen and (max-width: 933px) {
 	section>div {
 		overflow: auto;
@@ -223,6 +237,7 @@ p {
 		left: 1em;
 	}
 	#brandstatement {
+		font-size: 4vw;
 		left: 1em;
 		width: 90%;
 	}
@@ -239,7 +254,7 @@ p {
 }
 @media only screen and (max-width: 400px) {
 	nav a {
-		background: rgba(0,0,0,0.6);
+		background: rgba(0,0,0,0.4);
 		font-color: black;
 	}
 }

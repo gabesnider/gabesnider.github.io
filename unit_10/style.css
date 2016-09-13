@@ -217,6 +217,9 @@ p {
 	#slogan {
 		font-size: 7vw;
 	}
+	#sectionone {
+		background-attachment: scroll;
+	}
 }
 @media only screen and (max-width: 670px) {
 	nav {
@@ -251,6 +254,14 @@ p {
 	nav a + a {
 		margin-left: 0;
 	}
+}
+@media only screen and (max-width: 455px) {
+	#java-lang-logo, #python-lang-logo, #js-lang-logo {
+		height: 5em;
+	}
+	/*#sectionone {
+		height: initial or auto;
+	}*/
 }
 @media only screen and (max-width: 400px) {
 	nav a {

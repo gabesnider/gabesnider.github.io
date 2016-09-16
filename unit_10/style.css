@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Slabo+13px);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 * { margin:0; padding:0; box-sizing:border-box; transition: all .2s ease-in;}
 
@@ -32,13 +30,11 @@ body {
 #slogan {
 	font-size: 5em;
 	float: left;
-	/* padding: 2rem 0; */
 	width: 50%;
 	text-align: left;
 	padding-left: .2em;
 }
 #brandstatement {
-	/* padding: 4rem 0; */
 	padding-left: 2em;
 	line-height: 2em;
 	text-align: left;
@@ -89,12 +85,9 @@ nav a {
 	border-radius: 100px;
 	text-decoration: none;
 }
-nav a:active {
-	transform: scale(1.1, 1.1);
-	background: rgba(0,0,0,0.4);
-}
 nav a + a {
 	margin-left: 1em;
+	margin
 }
 nav a:link {
 	border: 2px solid;
@@ -106,7 +99,6 @@ nav a:link {
 nav a:hover {
 	background: rgba(0,0,0,0.5);
 	transform: scale(1.1, 1.1);
-
 }
 h1 {
 	padding-top: 4%;
@@ -187,7 +179,6 @@ p {
 	}
 	nav {
 		padding-left: .5vw;
-		float: left;
 	}
 }
 @media only screen and (max-width: 1160px) {
@@ -202,25 +193,38 @@ p {
 	}
 	section div div {
 		width: 100%;
-		height:30em;
+		height: 30em;
 	}
 	#slogan {
-		font-size: 7vw;
+		font-size: 8.5vw;
 	}
 	#sectionone {
 		background-attachment: scroll;
 	}
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 756px) {
+
+	nav a {
+		margin-top: .5em;
+	}
+	nav a + a {
+		margin-left: 1em;
+	}
+	nav a:active {
+	transform: scale(1.1, 1.1);
+	background: rgba(0,0,0,0.4);
+	}
+}
+@media only screen and (max-width: 679px) {
 	nav {
-		width: 90%;
+		width: 60%;
 	}
 	nav a {
 		display: block;
     	margin-top: .5em;
 	}
 	nav a + a {
-		margin-left: 0;
+		margin-left: 0.5em;
 	}
 }
 @media only screen and (max-width: 631px) {
@@ -234,17 +238,17 @@ p {
 		width: initial;
 	}
 }
+@media only screen and (max-width: 490px) {
+	nav {
+		width: 90%;
+	}
+}
 @media only screen and (max-width: 455px) {
 	#java-lang-logo, #python-lang-logo, #js-lang-logo {
 		height: 5em;
 	}
 	#sectionone {
 		height: auto;
-	}
-}
-@media only screen and (max-width: 400px) {
-	nav a {
-		background: rgba(0,0,0,0.4);
-		font-color: black;
+		width: 100%;
 	}
 }

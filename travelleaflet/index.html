@@ -34,8 +34,18 @@
 
   <script>
 
-  	
-  	
+  	var map = L.map('map').setView([38.88911, -77.00639], 16), touch;
+
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      subdomains: 'abc',
+      maxZoom: 18
+  }).addTo(map);
+
+    map.fitWorld();
+
+    var layer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    noWrap: true
+});
   </script>
 
 </body>

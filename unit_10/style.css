@@ -10,10 +10,6 @@ body {
 	font-size: 20px;
 	color: #222;
 }
-/*section:nth-of-type(odd) {
-	background:#222;
-	color:#fff;
-}*/
 #sectionone {
 	background-image: url('images/gabeoncar.JPG');
 	background-size: cover;
@@ -93,12 +89,13 @@ nav a {
 	border-radius: 100px;
 	text-decoration: none;
 }
+nav a:active {
+	transform: scale(1.1, 1.1);
+	background: rgba(0,0,0,0.4);
+}
 nav a + a {
 	margin-left: 1em;
 }
-/* nav a:first-of-type {
-	margin-left:0;
-} */
 nav a:link {
 	border: 2px solid;
 	padding: 1em 2em;
@@ -109,10 +106,7 @@ nav a:link {
 nav a:hover {
 	background: rgba(0,0,0,0.5);
 	transform: scale(1.1, 1.1);
-	text-decoration: none;
-}
-nav a:active {
-	
+
 }
 h1 {
 	padding-top: 4%;
@@ -174,10 +168,6 @@ p {
 	text-align: center;
 }
 @media only screen and (max-width: 1200px) {
-	/*#sectionone {
-		position: relative;
-		height: 100%;
-	}*/
 	#slogan, #brandstatement {
 		float: none;
 	}
@@ -197,7 +187,7 @@ p {
 	}
 	nav {
 		padding-left: .5vw;
-		float: left;c
+		float: left;
 	}
 }
 @media only screen and (max-width: 1160px) {
@@ -240,28 +230,17 @@ p {
 		left: 1em;
 	}
 	#brandstatement {
-		font-size: 4vw;
 		left: 1em;
-		width: 90%;
-	}
-	nav {
-		width: 100%;
-	}
-	nav a {
-		display: block;
-    	margin-top: .5em;
-	}
-	nav a + a {
-		margin-left: 0;
+		width: initial;
 	}
 }
 @media only screen and (max-width: 455px) {
 	#java-lang-logo, #python-lang-logo, #js-lang-logo {
 		height: 5em;
 	}
-	/*#sectionone {
-		height: initial or auto;
-	}*/
+	#sectionone {
+		height: auto;
+	}
 }
 @media only screen and (max-width: 400px) {
 	nav a {

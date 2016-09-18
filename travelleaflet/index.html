@@ -6,7 +6,7 @@
   <title>Travel Leaflet Map</title>
 
   <link rel="stylesheet" href="leaflet.css">
-
+  <meta charset="utf-8">
   <script src="leaflet.js"></script>
   <script src="leaflet-src.js"></script>
 
@@ -34,18 +34,22 @@
 
   <script>
 
-  	var map = L.map('map').setView([38.88911, -77.00639], 16), touch;
+  	var map = L.map('map');
 
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       subdomains: 'abc',
-      maxZoom: 18
+      maxZoom: 18,
+      minZoom: 0
   }).addTo(map);
 
-    map.fitWorld();
-
     var layer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    noWrap: true
-});
+      noWrap: true
+  });
+
+    var planes = [
+    ["Tel Aviv, Israel", 32.109333, 34.855499]
+    ]
+
   </script>
 
 </body>

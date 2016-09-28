@@ -16,9 +16,7 @@
 <div id="wrapper">
 	<div id="sectionone">
 		<section id="twocolumn" class="clearfix">
-
 			<p id="slogan">hi, i'm gabe.</p>
-			
 			<p id="brandstatement">Programmer, public-spirited visionary, innovator and collaborator. Fixer of problems and glue of the group. Diligent and quick-witted, I am always learning. Excited to build things from my mind into reality.</p>
 			<nav>
 				<a href="#headaboutme">about me</a>
@@ -61,6 +59,8 @@
 			</div>
 		</div>
 	</section>
+	<div id="gabes-map"></div>
+	<script src="https://gabesnider.github.io/travelleaflet/index.html"></script>
 	<section id="headcontact">
 		<h1>contact</h1>
 		<div id="contact">
@@ -75,12 +75,9 @@
 <script>
 $(document).ready(function() {
   $("a").on('click', function(event) {
-
     if (this.hash !== "") {
       event.preventDefault();
-
       var hash = this.hash;
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function() {

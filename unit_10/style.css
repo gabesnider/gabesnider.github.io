@@ -69,9 +69,6 @@ body {
 #js-lang-logo {
 	height: 6em;
 }
-#gabes-map {
-	height: 400px;
-}
 nav {
 	clear: both;
 	float: left;
@@ -126,6 +123,10 @@ section p {
 }
 section div:nth-of-type(even) div {
     float: right;
+}
+#map {
+	overflow: hidden;
+	width: 100%;
 }
 .about-pic {
 	background: url(images/rice.jpg);

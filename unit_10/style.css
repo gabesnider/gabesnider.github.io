@@ -113,11 +113,11 @@ section div:nth-of-type(even) div {
     float: right;
 }
 #gabesmap {
-
+	background-color: #222;
 }
 #map {
 	vertical-align: top;
-	width: 80%;
+	width: 100%;
 	height: 500px;
 	display: inline-block;
 	margin: 0px;
@@ -196,6 +196,9 @@ p {
 	}
 	#sectionone {
 		background-attachment: scroll;
+	}
+	.contact-pic {
+		height: 65vh;
 	}
 }
 @media only screen and (max-width: 756px) {

@@ -4,31 +4,12 @@
 	<title>Gabe Snider</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/Weather-Sun-icon.png" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 	<link href="js/leaflet.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/leaflet-src.js"></script>
-	<script src="Leaflet.Sleep-master/Leaflet.Sleep.js"></script>
-
-	<script>
-		$(document).ready(function() {
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function() {
-						window.location.hash = hash;
-					});
-				}
-			});
-		});
-	</script>
 
 	<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 	<link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css">
@@ -42,11 +23,12 @@
 			maxZoom: 14,
 			minZoom: 2,
 			attribution: osmAttrib,
-			noWrap: true
 		});
 
 		// initialize the map on the "map" div with a given center and zoom
-		var map = L.map('map').setView([-28.65, 144.2], 3).addLayer(osm);
+		var map = L.map('map').setView([40.7128, -74.0059], 10).addLayer(osm);
+
+
 
 		L.marker([10.2750, -84.8255]).addTo(map).bindPopup("Monteverde, Costa Rica");
 		L.marker([43.6532, -79.3832]).addTo(map).bindPopup("Toronto, Canada");
@@ -109,7 +91,6 @@
 				</nav>
 			</section>
 		</div>
-
 		<section id="headaboutme">
 			<h1>about me</h1>
 			<div id="aboutme" class="clearfix">
@@ -130,19 +111,20 @@
 			<div id="skills">
 				<div class="skills-pic"></div>
 				<div id="myskills">
-					<p>
-						I am fluent in Java object oriented programming and have worked with several other programming langauges. While you're here, take a look at my <a href="docs/GabrielSniderResume1.pdf"><b>resume</b></a>.</p>
+					<p>I am fluent in Java object oriented programming and have worked with several other programming langauges. While you're here, take a look at my <a href="docs/GabrielSniderResume1.pdf"><b>resume</b></a>.</p>
 					</div>
 				</div>
 				<div id="moreskills">
 					<div class="moreskills-pic"></div>
 					<div id="evenmore">
-						<p>I made a simulation Black Jack game in Java with object oriented programming using inheritance and mutliple classes. I recently built a tracking map with Leaflet.JS, APIs, and Open Street Maps. <a href="https://gabesnider.github.io/leaflet/index.html"><b>Check it out.</b></a></p>
+						<p>I made a simulation Black Jack game in Java with object oriented programming using inheritance and mutliple classes. I recently built an interactive  map of my travels with Leaflet.JS and Open Street Maps.</p>
 					</div>
 				</div>
 			</section>
 			<div id="gabesmap">
-				<div id="map"></div>
+				<div id="map">
+					<script src="Leaflet.Sleep-master/Leaflet.Sleep.js"></script>
+				</div>
 			</div>
 			<section id="headcontact">
 				<h1>contact</h1>
@@ -156,4 +138,20 @@
 			</section>
 		</div>
 	</body>
+
+	<script>
+		$(document).ready(function() {
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function() {
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
 </html>

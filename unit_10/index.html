@@ -14,85 +14,146 @@
 	<script type="text/javascript" src="js/leaflet-src.js"></script>
 	<script src="Leaflet.Sleep-master/Leaflet.Sleep.js"></script>
 
+	<script>
+		$(document).ready(function() {
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function() {
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript">
+		window.onload=function(){
+		var osmUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+		osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a>',
+		osm = L.tileLayer(osmUrl, {
+			maxZoom: 14,
+			minZoom: 2,
+			attribution: osmAttrib,
+			noWrap: true
+		});
+
+		// initialize the map on the "map" div with a given center and zoom
+		var map = L.map('map').setView([-28.65, 144.2], 3).addLayer(osm);
+
+		L.marker([10.2750, -84.8255]).addTo(map).bindPopup("Monteverde, Costa Rica");
+		L.marker([43.6532, -79.3832]).addTo(map).bindPopup("Toronto, Canada");
+		L.marker([59.3293, 18.0686]).addTo(map).bindPopup("Stockholm, Sweden");
+		L.marker([59.9139, 10.7522]).addTo(map).bindPopup("Oslo, Norway");
+		L.marker([55.6761, 12.5683]).addTo(map).bindPopup("Copenhagen, Denmark");
+		L.marker([-8.350885, 116.037276]).addTo(map).bindPopup("Gili Trawangan, Bali, Indonesia");
+		L.marker([-16.9186, 145.7781]).addTo(map).bindPopup("Cairns, AUS");
+		L.marker([-33.8688, 151.2093]).addTo(map).bindPopup("Sydney, AUS");
+		L.marker([-25.3444, 131.0369]).addTo(map).bindPopup("Uluru, AUS");
+		L.marker([29.4241, -98.4936]).addTo(map).bindPopup("San Antonio, TX, USA");
+		L.marker([43.0831, -73.7846]).addTo(map).bindPopup("Saratoga Springs, NY, USA");
+		L.marker([41.8781, -87.6298]).addTo(map).bindPopup("Chicago, IL, USA");
+		L.marker([36.1627, -86.7816]).addTo(map).bindPopup("Nashville, TN, USA");
+		L.marker([36.1128, -113.9961]).addTo(map).bindPopup("Grand Canyon, AZ, USA");
+		L.marker([37.7749, -122.4194]).addTo(map).bindPopup("San Francisco, CA, USA");
+		L.marker([35.6870, -105.9378]).addTo(map).bindPopup("Santa Fe, NM, USA");
+		L.marker([44.4759, -73.2121]).addTo(map).bindPopup("Burlington, VT, USA");
+		L.marker([40.7128, -74.0059]).addTo(map).bindPopup("New York City, NY, USA");
+		L.marker([38.9072, -77.0369]).addTo(map).bindPopup("Washington, D.C., USA");
+		L.marker([19.4326, -99.1332]).addTo(map).bindPopup("Mexico City, Mexico");
+		L.marker([-0.1807, -78.4678]).addTo(map).bindPopup("Quito, Ecuador");
+		L.marker([-1.3928, -78.4269]).addTo(map).bindPopup("Banos, Ecuador");
+		L.marker([-0.9538, -90.9656]).addTo(map).bindPopup("Galapagos Islands, Ecuador");
+		L.marker([36.1441, -5.3417]).addTo(map).bindPopup("Rock of Gibraltar");
+		L.marker([30.32164, 35.48013]).addTo(map).bindPopup("Petra, Jordan");
+		L.marker([32.109333, 34.855499]).addTo(map).bindPopup("Tel Aviv, Israel");
+		L.marker([31.7683, 35.2137]).addTo(map).bindPopup("Jerusalem, Israel");
+		L.marker([32.7940, 34.9896]).addTo(map).bindPopup("Haifa, Israel");
+		L.marker([31.4512, 35.3836]).addTo(map).bindPopup("Ein Gedi, Israel");
+		L.marker([29.5577, 34.9519]).addTo(map).bindPopup("Eilat, Israel");
+		L.marker([32.3215, 34.8532]).addTo(map).bindPopup("Netanya, Israel");
+		L.marker([37.9838, 23.7275]).addTo(map).bindPopup("Athens, Greece");
+		L.marker([40.6401, 22.9444]).addTo(map).bindPopup("Thessaloniki, Greece");
+		L.marker([40.4168, -3.7038]).addTo(map).bindPopup("Madrid, Spain");
+		L.marker([41.3851, 2.1734]).addTo(map).bindPopup("Barcelona, Spain");
+		L.marker([36.1627, -86.7816]).addTo(map).bindPopup("Nashville, TN, USA");
+		L.marker([-36.84846, 174.76333]).addTo(map).bindPopup("Auckland, NZ");
+		L.marker([-38.1368, 176.2497]).addTo(map).bindPopup("Rotorua, NZ");
+		L.marker([-43.53205, 172.63623]).addTo(map).bindPopup("Christchurch, NZ");
+		L.marker([-45.03116, 168.6626]).addTo(map).bindPopup("Queenstown, NZ");
+		L.marker([-37.81411, 144.96328]).addTo(map).bindPopup("Melbourne, AUS");
+		L.marker([-28.64737, 153.60198]).addTo(map).bindPopup("Byron Bay, AUS");
+		L.marker([-18.2871, 147.6992]).addTo(map).bindPopup("Great Barrier Reef, AUS");
+		L.marker([-42.88190, 147.32381]).addTo(map).bindPopup("Hobart, Tasmania, AUS");
+	}
+</script>
 </head>
 
 <body>
-<div id="wrapper">
-	<div id="sectionone">
-		<section id="twocolumn" class="clearfix">
-			<p id="slogan">hi, i'm gabe.</p>
-			<p id="brandstatement">Programmer, public-spirited visionary, innovator and collaborator. Fixer of problems and glue of the group. Diligent and quick-witted, I am always learning. Excited to build things from my mind into reality.</p>
-			<nav>
-				<a href="#headaboutme">about me</a>
-				<a href="#headskills">skills + experience</a>
-				<a href="#headcontact">contact</a>
-			</nav>
-		</section>
-	</div>
+	<div id="wrapper">
+		<div id="sectionone">
+			<section id="twocolumn" class="clearfix">
+				<p id="slogan">hi, i'm gabe.</p>
+				<p id="brandstatement">Programmer, public-spirited visionary, innovator and collaborator. Fixer of problems and glue of the group. Diligent and quick-witted, I am always learning. Excited to build things from my mind into reality.</p>
+				<nav>
+					<a href="#headaboutme">about me</a>
+					<a href="#headskills">skills + experience</a>
+					<a href="#headcontact">contact</a>
+				</nav>
+			</section>
+		</div>
 
-	<section id="headaboutme">
-		<h1>about me</h1>
-		<div id="aboutme" class="clearfix">
-			<div class="about-pic"></div>
-			<div id="firstcontent">
-				<p>IVF babe coneceived in NY. Born and raised in the suburbs of DC. I divide my time between laughing too loudly and petting strangers' dogs. Traveling means the world to me. I do not take myself seriously. And I hate incomplete</p>
+		<section id="headaboutme">
+			<h1>about me</h1>
+			<div id="aboutme" class="clearfix">
+				<div class="about-pic"></div>
+				<div id="firstcontent">
+					<p>IVF babe coneceived in NY. Born and raised in the suburbs of DC. I divide my time between laughing too loudly and petting strangers' dogs. Traveling means the world to me. I do not take myself seriously. And I hate incomplete</p>
+				</div>
 			</div>
-		</div>
-		<div id="meagain" class="clearfix">
-			<div class="meagain-pic"></div>
-			<div id="contentme">
-				<p>Double major in computer science and awesomeness. Aspiring UX designer and dogfather. I have an eye for design and want to make the web a more user friendly place. I like reaching challenging heights and developing new skills. My desire is to be part of a tech team that pushes my limits and expands the notion of what is possibile. </p>
+			<div id="meagain" class="clearfix">
+				<div class="meagain-pic"></div>
+				<div id="contentme">
+					<p>Double major in computer science and awesomeness. Aspiring UX designer and dogfather. I have an eye for design and want to make the web a more user friendly place. I like reaching challenging heights and developing new skills. My desire is to be part of a tech team that pushes my limits and expands the notion of what is possibile. </p>
+				</div>
 			</div>
-		</div>
-	</section>
-	<section id="headskills">
-		<h1>skills + experience</h1>
-		<div id="skills">
-			<div class="skills-pic"></div>
-			<div id="myskills">
-				<p><img src="https://d2f2p26ywennn8.cloudfront.net/assets/public/getting-started/java-logo_2x-32beae8858499f7f2efa4f60cb0e641be46086c894b2c19ba3a2ed125c17098c.png" id="java-lang-logo" alt="java-lang-logo">
-				<img src="https://d2f2p26ywennn8.cloudfront.net/assets/public/getting-started/python-logo_2x-999c8c56554e563b0bdf5fca4dda5752c2cc37cfe35a17ccd0f793a7cb6b120b.png" id="python-lang-logo" alt="python-lang-logo">
-				<img src="https://d2f2p26ywennn8.cloudfront.net/assets/public/getting-started/node-logo_2x-2023f89872fa8c0f710dc26eb28f48baf14bfb4a41909f92350592e15a7f9eac.png" id="js-lang-logo" alt="js-lang-logo"><br>
-				I am fluent in Java object oriented programming and have worked with several other programming langauges. Take a look at my <a href="docs/GabrielSniderResume.pdf"><b>resume</b></a> while you're here.</p>
+		</section>
+		<section id="headskills">
+			<h1>skills + experience</h1>
+			<div id="skills">
+				<div class="skills-pic"></div>
+				<div id="myskills">
+					<p>
+						I am fluent in Java object oriented programming and have worked with several other programming langauges. While you're here, take a look at my <a href="docs/GabrielSniderResume1.pdf"><b>resume</b></a>.</p>
+					</div>
+				</div>
+				<div id="moreskills">
+					<div class="moreskills-pic"></div>
+					<div id="evenmore">
+						<p>I made a simulation Black Jack game in Java with object oriented programming using inheritance and mutliple classes. I recently built a tracking map with Leaflet.JS, APIs, and Open Street Maps. <a href="https://gabesnider.github.io/leaflet/index.html"><b>Check it out.</b></a></p>
+					</div>
+				</div>
+			</section>
+			<div id="gabesmap">
+				<div id="map"></div>
 			</div>
+			<section id="headcontact">
+				<h1>contact</h1>
+				<div id="contact">
+					<div class="contact-pic"></div>
+					<div id="contactcontent">
+						<p>You can reach me through <a href="mailto:gabelsnider@gmail.com"><b>email</b></a>. Check out my <a href="https://github.com/gabesnider"><b>GitHub</b></a>. Connect with me on <a href="https://www.linkedin.com/in/gabrielsnider"><b>LinkedIn</b></a>. Rather than say goodbye, I say Hello World!
+						</p>
+					</div>
+				</div>
+			</section>
 		</div>
-		<div id="moreskills">
-			<div class="moreskills-pic"></div>
-			<div id="evenmore">
-				<p>I made a simulation Black Jack game in Java with object oriented programming using inheritance and mutliple classes. I recently built a tracking map with Leaflet.JS, APIs, and Open Street Maps. <a href="https://gabesnider.github.io/leaflet/index.html"><b>Check it out.</b></a></p>
-			</div>
-		</div>
-	</section>
-	<div id="gabesmap">
-		<div id="map">
-		<script type="text/javascript" src="js/gabestravelleaflet.js"></script>
-		</div>
-	</div>
-	<section id="headcontact">
-		<h1>contact</h1>
-		<div id="contact">
-			<div class="contact-pic"></div>
-			<div id="contactcontent">
-				<p>You can reach me through <a href="mailto:gabelsnider@gmail.com"><b>email</b></a>. Check out my <a href="https://github.com/gabesnider"><b>GitHub</b></a>. Connect with me on <a href="https://www.linkedin.com/in/gabrielsnider"><b>LinkedIn</b></a>. Rather than say goodbye, I say Hello World!
-				</p>
-			</div>
-		</div>
-	</section>
-	</div>
-<script>
-$(document).ready(function() {
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function() {
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-</body>
+	</body>
 </html>

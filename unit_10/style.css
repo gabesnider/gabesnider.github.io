@@ -58,17 +58,6 @@ body {
 #headskills a:visited, #headcontact a:visited {
 	color: black;
 }
-#java-lang-logo {
-	height: 6em;
-	margin-right: .25em;
-}
-#python-lang-logo {
-	height: 6em;
-	margin-right: .25em;
-}
-#js-lang-logo {
-	height: 6em;
-}
 nav {
 	clear: both;
 	float: left;
@@ -85,7 +74,6 @@ nav a {
 }
 nav a + a {
 	margin-left: 1em;
-	margin
 }
 nav a:link {
 	border: 2px solid;
@@ -124,9 +112,15 @@ section p {
 section div:nth-of-type(even) div {
     float: right;
 }
+#gabesmap {
+
+}
 #map {
-	overflow: hidden;
-	width: 100%;
+	vertical-align: top;
+	width: 80%;
+	height: 500px;
+	display: inline-block;
+	margin: 0px;
 }
 .about-pic {
 	background: url(images/rice.jpg);

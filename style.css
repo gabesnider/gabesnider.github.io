@@ -1,0 +1,253 @@
+* { margin:0; padding:0; box-sizing:border-box; transition: all .2s ease-in;}
+body {
+	text-align: center;
+	font-family: "Muli", sans-serif;
+	text-rendering: optimizeLegibility;
+	font-size: 20px;
+	color: #222;
+}
+#sectionone {
+	background-image: url('images/gabeoncar.JPG');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+}
+#twocolumn {
+	max-width:60em;
+	margin:auto;
+	padding-top: 3em;
+	color: #fff;
+}
+#twocolumn p {
+	position:initial;
+	transform: translate(0, 0);
+}
+#slogan {
+	font-size: 5em;
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding-left: .2em;
+}
+#brandstatement {
+	padding-left: 2em;
+	line-height: 2em;
+	text-align: left;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+}
+.clearfix:after,section:after {
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear:both;
+	content: "";
+}
+#headskills a, #headcontact a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+#headskills a:hover, #headcontact a:hover {
+	border-bottom: 1px solid black;
+}
+#headskills a:visited, #headcontact a:visited {
+	color: black;
+}
+nav {
+	clear: both;
+	float: left;
+	margin-top: 2em;
+}
+nav a {
+	text-align: center;
+	color: inherit;
+	border: 2px solid;
+	padding: 1em 2em;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+}
+nav a + a {
+	margin-left: 1em;
+}
+nav a:link {
+	border: 2px solid;
+	padding: 1em 2em;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+}
+nav a:hover {
+	background: rgba(0,0,0,0.5);
+	transform: scale(1.1, 1.1);
+}
+h1 {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background: #222;
+	color: #fff;
+}
+section>div {
+	width: 100%;
+	overflow: hidden;
+	height: 30em;
+}
+section div div {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+section p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+section div:nth-of-type(even) div {
+    float: right;
+}
+#gabesmap {
+	background-color: #222;
+}
+#map {
+	vertical-align: top;
+	width: 100%;
+	height: 500px;
+	display: inline-block;
+	margin: 0px;
+}
+.about-pic {
+	background: url(images/rice.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.meagain-pic {
+	background:url(images/gabewithcomputer.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.skills-pic {
+	background:url(images/streetart.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.moreskills-pic {
+	background:url(images/watching.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.contact-pic {
+	background:url(images/face.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center top;
+}
+p {
+	text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+	#slogan, #brandstatement {
+		float: none;
+	}
+	#slogan {
+		font-size: 4em;
+		width: 60%;
+		position: absolute;
+		padding-left: .5vw;
+	}
+	#brandstatement {
+		position: absolute;
+		top: 25%;
+		padding-left: .5vw;
+	}
+	#twocolumn {
+		padding: 2em 1em 10em;
+	}
+	nav {
+		padding-left: .5vw;
+	}
+}
+@media only screen and (max-width: 1160px) {
+	#brandstatement {
+		width: 53%;
+	}
+}
+@media only screen and (max-width: 933px) {
+	section>div {
+		overflow: auto;
+		height: auto;
+	}
+	section div div {
+		width: 100%;
+		height: 30em;
+	}
+	#slogan {
+		font-size: 8.5vw;
+	}
+	#sectionone {
+		background-attachment: scroll;
+	}
+	.contact-pic {
+		height: 65vh;
+	}
+}
+@media only screen and (max-width: 756px) {
+
+	nav a {
+		margin-top: .5em;
+	}
+	nav a + a {
+		margin-left: 1em;
+	}
+	nav a:active {
+	transform: scale(1.1, 1.1);
+	background: rgba(0,0,0,0.4);
+	}
+}
+@media only screen and (max-width: 679px) {
+	nav {
+		width: 60%;
+	}
+	nav a {
+		display: block;
+    	margin-top: .5em;
+	}
+	nav a + a {
+		margin-left: 0.5em;
+	}
+}
+@media only screen and (max-width: 631px) {
+	#slogan {
+		width: 100%;
+		font-size: 2em;
+		left: 1em;
+	}
+	#brandstatement {
+		left: 1em;
+		width: initial;
+	}
+}
+@media only screen and (max-width: 490px) {
+	nav {
+		width: 95%;
+	}
+}
+@media only screen and (max-width: 455px) {
+	#java-lang-logo, #python-lang-logo, #js-lang-logo {
+		height: 5em;
+	}
+	#sectionone {
+		height: auto;
+		width: 100%;
+	}
+}
